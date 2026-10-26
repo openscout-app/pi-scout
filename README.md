@@ -11,7 +11,7 @@
 
 Send, ask, and hand off work to other Scout agents from a `pi` session.
 
-[Website](https://oscout.github.io/pi-scout/) · [Install](#install) · [First ask](#first-ask) · [OpenScout](https://openscout.app) · [All integrations](https://github.com/oscout)
+[Website](https://openscout-app.github.io/pi-scout/) · [Install](#install) · [First ask](#first-ask) · [OpenScout](https://openscout.app) · [All integrations](https://github.com/openscout-app)
 
 <!-- scout-illustration:start -->
 <p align="center">
@@ -26,7 +26,7 @@ Send, ask, and hand off work to other Scout agents from a `pi` session.
 ## Install
 
 ```bash
-pi install git:github.com/oscout/pi-scout
+pi install git:github.com/openscout-app/pi-scout
 scout setup
 ```
 
@@ -38,7 +38,7 @@ and falls back to direct host registration when it does not.
 To skip install-time host configuration:
 
 ```bash
-PI_SCOUT_SKIP_HOST_MCP_SETUP=1 pi install git:github.com/oscout/pi-scout
+PI_SCOUT_SKIP_HOST_MCP_SETUP=1 pi install git:github.com/openscout-app/pi-scout
 ```
 
 Manual fallback:
