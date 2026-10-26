@@ -23,7 +23,7 @@ export function loadConfig(): PiScoutConfig {
   _config = { ...DEFAULT_CONFIG };
 
   try {
-    const home = process.env.HOME ?? "/Users/art";
+    const home = process.env.HOME ?? homedir();
     const configPath = join(home, ".pi", "agent", "extensions", "pi-scout", "config.json");
     if (existsSync(configPath)) {
       const raw = JSON.parse(readFileSync(configPath, "utf8"));
@@ -47,7 +47,7 @@ export function resolveSocketPaths(): string[] {
   const explicitSocketPath = process.env.OPENSCOUT_BROKER_SOCKET_PATH;
   if (explicitSocketPath) return [explicitSocketPath];
 
-  const home = process.env.HOME ?? homedir() ?? "/Users/art";
+  const home = process.env.HOME ?? homedir();
   const supportDirectory = process.env.OPENSCOUT_SUPPORT_DIRECTORY
     ?? join(home, "Library", "Application Support", "OpenScout");
   const controlHome = process.env.OPENSCOUT_CONTROL_HOME

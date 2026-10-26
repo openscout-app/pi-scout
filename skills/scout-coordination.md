@@ -78,7 +78,7 @@ The slash command parser stays intentionally small. Use the tools directly for p
 
 ### Project-Routed Work
 ```
-Use scout_ask with projectPath: "/Users/arach/dev/openscout", harness: "codex"
+Use scout_ask with projectPath: "/path/to/repo", harness: "codex"
 ```
 
 ### Exact Session Continuity

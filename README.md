@@ -106,15 +106,15 @@ If `socketPath` is `null`, `pi-scout` uses:
 
 ## Develop
 
-Register an unreleased OpenScout checkout instead of a globally installed
-`scout` binary:
+Register an unreleased Scout checkout instead of a globally installed `scout`
+binary. From the Scout checkout, after `bun run --cwd packages/cli build`:
 
 ```bash
-bun ~/dev/openscout/apps/desktop/bin/scout.ts mcp install --host codex --host claude --force
+./packages/cli/bin/scout mcp install --host codex --host claude --force
 ```
 
-Link a local checkout of the extension:
+Link your checkout of the extension. From its folder:
 
 ```bash
-ln -s ~/dev/pi-scout ~/.pi/agent/extensions/pi-scout
+ln -s "$PWD" ~/.pi/agent/extensions/pi-scout
 ```
